@@ -1,5 +1,5 @@
 {
-  "name": "projeto-backend-v2",
+  "name": "projeto-backend-v3",
   "version": "3.0.0",
   "description": "API REST completa com JWT, Zod, paginação, testes e Docker",
   "main": "server.js",

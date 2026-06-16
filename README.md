@@ -1,6 +1,8 @@
 # projeto-backend.v3
 
-API REST desenvolvida com Node.js, Express e MongoDB, seguindo boas práticas de mercado: autenticação JWT, validação de dados com Zod, paginação, segurança com Helmet e Rate Limiting, testes automatizados com Jest e Supertest, containerização com Docker e documentação interativa via Swagger/OpenAPI.
+REST API desenvolvida com Node.js, Express e MongoDB.
+
+Implementa autenticação JWT, validação com Zod, paginação, rate limiting, Helmet, testes automatizados com Jest/Supertest, Docker e documentação Swagger/OpenAPI.
 
 ---
 

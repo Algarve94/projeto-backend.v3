@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  # ── API Node.js ───────────────────────────────────────────────
+  api:
+    build: .
+    container_name: projeto-backend-api
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGO_URI=mongodb://mongo:27017/exemplo_db
+      - NODE_ENV=production
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN:-7d}
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── MongoDB ───────────────────────────────────────────────────
+  mongo:
+    image: mongo:7
+    container_name: projeto-backend-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db   # Persiste os dados entre reinicializações
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

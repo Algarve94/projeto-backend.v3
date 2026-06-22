@@ -27,8 +27,8 @@ configurarSwagger(app);
 // ── Rotas ────────────────────────────────────────────────────────
 app.get("/", (req, res) => {
   res.json({
-    mensagem: "API rodando com sucesso! 🚀",
-    documentacao: `http://localhost:${PORT}/docs`,
+    mensagem: "API rodando com sucesso!",
+    documentacao: `${req.protocol}://${req.get("host")}/docs`
   });
 });
 
@@ -42,9 +42,10 @@ app.use(tratadorDeErros);
 // ── Iniciar servidor ─────────────────────────────────────────────
 if (process.env.NODE_ENV !== "test") {
   app.listen(PORT, () => {
-    console.log(`🚀 Servidor: http://localhost:${PORT}`);
-    console.log(`📦 Ambiente: ${process.env.NODE_ENV || "development"}`);
-  });
+  console.log(
+    `Servidor iniciado em ${process.env.NODE_ENV || "development"}`
+  );
+});
 }
 
 module.exports = app; // exportado para os testes

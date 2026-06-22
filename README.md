@@ -246,6 +246,4 @@ Consulte o arquivo [DEPLOY.md](./DEPLOY.md) para o guia completo de deploy no Ra
 
 ---
 
-## Licença
-
-MIT
++ Licença: [MIT](./LICENSE)

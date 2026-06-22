@@ -30,7 +30,7 @@ No painel → **Environment** → adicione:
 | `JWT_SECRET` | Um segredo forte (veja abaixo) |
 | `JWT_EXPIRES_IN` | `7d` |
 
-> 💡 Para gerar o JWT_SECRET:
+> Para gerar o JWT_SECRET:
 > ```bash
 > node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 > ```
@@ -39,7 +39,7 @@ No painel → **Environment** → adicione:
 
 Acesse: `https://projeto-backend-v3.onrender.com/docs`
 
-> ⚠️ Render Free Tier: a API adormece após 15 min sem requisições.
+> Render Free Tier: a API adormece após 15 min sem requisições.
 > A primeira requisição pode demorar ~30s para acordar.
 
 ---

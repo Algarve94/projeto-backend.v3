@@ -79,7 +79,7 @@ const configurarSwagger = (app) => {
       swaggerOptions: { persistAuthorization: true },
     })
   );
-  console.log("📄 Swagger disponível em http://localhost:3000/docs");
+  console.log("Swagger disponível na rota /docs");
 };
 
 module.exports = configurarSwagger;

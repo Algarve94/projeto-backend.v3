@@ -23,7 +23,7 @@
 
 1. Acesse [railway.app](https://railway.app) → **New Project**
 2. Selecione **Deploy from GitHub repo**
-3. Conecte sua conta GitHub e selecione o repositório `projeto-backend.v2`
+3. Conecte sua conta GitHub e selecione o repositório `projeto-backend.v3`
 4. O Railway detecta automaticamente o Node.js e faz o build
 
 ---

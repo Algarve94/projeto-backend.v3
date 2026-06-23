@@ -242,10 +242,8 @@ curl http://localhost:3000/usuarios \
 
 ## Deploy
 
-Consulte o arquivo [DEPLOY.md](./DEPLOY.md) para o guia completo de deploy no Railway com MongoDB Atlas.
+Consulte o arquivo [DEPLOY.md](./DEPLOY.md) para o guia completo de deploy no Render e Railway com MongoDB Atlas.
 
 ---
 
-## Licença
-
-MIT
++ Licença: [MIT](./LICENSE)

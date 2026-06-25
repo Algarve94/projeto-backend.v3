@@ -15,7 +15,7 @@ API REST para gerenciamento de usuários desenvolvida com Node.js, Express e Mon
 - ✅ Docker + Docker Compose
 - ✅ Swagger / OpenAPI 3.0
 - ✅ GitHub Actions (CI)
-- ✅ 17 testes automatizados
+- ✅ 25 testes automatizados
 - ✅ Cobertura de código superior a 90%
 
 ---
@@ -50,6 +50,8 @@ Este projeto foi desenvolvido para demonstrar conhecimentos em:
 - Containerização com Docker
 - Documentação OpenAPI / Swagger
 - Integração contínua (GitHub Actions)
+
+Implementa autenticação JWT, validação com Zod, paginação, rate limiting, Helmet, testes automatizados com Jest/Supertest, Docker e documentação Swagger/OpenAPI.
 
 ---
 
@@ -266,3 +268,4 @@ Consulte o arquivo [DEPLOY.md](./DEPLOY.md) para o guia completo de deploy no Re
 
 Este projeto está sob a licença [MIT](./LICENSE).
 Sinta-se livre para usar como base em seus próprios projetos.
++ Licença: [MIT](./LICENSE)

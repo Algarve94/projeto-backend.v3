@@ -10,3 +10,7 @@ build/
 .vscode/
 .DS_Store
 dist/
+.cache/
+projeto-backend-clean/
+screenshots/
+node_modules/.cache/

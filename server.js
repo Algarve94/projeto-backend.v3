@@ -11,7 +11,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Conectar ao MongoDB
-connectDB();
+if (process.env.NODE_ENV !== "test") {
+  connectDB();
+}
+
 
 // ── Segurança ────────────────────────────────────────────────────
 app.use(configurarHelmet);

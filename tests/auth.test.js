@@ -13,7 +13,7 @@ const usuarioValido = {
 describe("POST /auth/registrar", () => {
   it("deve registrar um novo usuário e retornar token", async () => {
     const res = await request(app).post("/auth/registrar").send(usuarioValido);
-    console.log("ERRO:", res.body); // ← ADICIONE ESTA LINHA
+    console.log("ERRO:", res.body);
     expect(res.statusCode).toBe(201);
     expect(res.body.sucesso).toBe(true);
     expect(res.body.token).toBeDefined();

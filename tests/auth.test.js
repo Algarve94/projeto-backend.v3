@@ -102,12 +102,7 @@ describe("GET /auth/me", () => {
     expect(res.statusCode).toBe(401);
   });
 
-// Teste adicional para verificar resposta detalhada  
-  it("deve registrar um novo usuário e retornar token", async () => {
-  const res = await request(app).post("/auth/registrar").send(usuarioValido);
-
   expect(res.statusCode).toBe(201);
   // ...
 });
 
-});

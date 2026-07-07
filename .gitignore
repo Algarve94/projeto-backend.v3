@@ -12,5 +12,4 @@ build/
 dist/
 .cache/
 projeto-backend-clean/
-screenshots/
 node_modules/.cache/

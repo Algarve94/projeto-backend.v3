@@ -32,9 +32,9 @@ API REST para gerenciamento de usuários desenvolvida com Node.js, Express e Mon
 
 ## Documentação Swagger
 
-![Swagger - Tela Inicial](./screenshots/swagger-preview.png)
+[Swagger - Tela Inicial](./docs/images/swagger-preview.png)
 
-![Swagger - Endpoints](./screenshots/swagger-preview2.png)
+![Swagger - Endpoints](./docs/images/swagger-preview2.png)
 
 ---
 

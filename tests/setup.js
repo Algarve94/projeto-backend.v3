@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+console.log("SETUP VERSION 2");
 const { MongoMemoryServer } = require("mongodb-memory-server");
 
 let mongoServer;

@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
-console.log("SETUP VERSION 2");
 const { MongoMemoryServer } = require("mongodb-memory-server");
-
 let mongoServer;
 
+jest.setTimeout(60000);
+
 beforeAll(async () => {
+  await mongoose.disconnect();
   mongoServer = await MongoMemoryServer.create();
   const uri = mongoServer.getUri();
-
-  await mongoose.connect(uri);
+  await mongoose.connect(uri);   // ← SEM as opções antigas!
 });
 
 afterEach(async () => {

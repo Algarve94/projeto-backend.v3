@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: api-usuarios-prisma
+    runtime: node
+    plan: free
+
+    buildCommand: npm install
+
+    startCommand: npm start
+
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+
+      - key: JWT_SECRET
+        sync: false
+
+      - key: NODE_ENV
+        value: production
